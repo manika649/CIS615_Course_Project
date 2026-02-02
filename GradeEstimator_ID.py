@@ -73,5 +73,5 @@ print("Currently you have {0} points for course projects out of {1}".format(proj
 print("Currently you have {0} points for core assessments out of {1}".format(core_sum, max_core))
 
 
-# ---------- unit 5 -------- 
+# ---------- unit 4 -------- 
 
