@@ -1,6 +1,9 @@
 # Task: Grade Estimator
 # Name: Manika Karki
 
+
+# ---------- unit 1 -------- 
+
 # Ask for name input
 first_name = input("Please enter your first name: ")
 last_name = input("Please enter your last name: ")
@@ -8,6 +11,9 @@ last_name = input("Please enter your last name: ")
 # String Cleaning (strip spaces and capitalize)
 clean_first = first_name.strip().capitalize()
 clean_last = last_name.strip().capitalize()
+
+
+# ---------- unit 2 -------- 
 
 # Math calculation (50 points per category)
 disc_points = 50
@@ -24,6 +30,7 @@ print(f"Discussion points equal 50? {disc_points == 50}")
 print(f"Project points equal 50? {proj_points == 50}")
 print(f"Core points equal 50? {core_points == 50}")
 
+# ---------- unit 3 -------- 
 
 # Task: Unit 3 Grade Estimator
 # Name: Manika Karki
@@ -44,7 +51,7 @@ total_discussion_points = [Unit1_discussion_points, Unit2_discussion_points]
 # This list combines Unit 1 and Unit 2 project points
 total_course_project_points = [Unit1_course_project_points, Unit2_course_project_points]
 # This list combines Unit 1 and Unit 2 core assessment points
-total_core_assessment_points = [Unit1_core_assesment_points, Unit2_core_assesment_points]
+total_core_assessment_points = [Unit1_core_assessment_points, Unit2_core_assessment_points]
 
 # --- Step 4: Calculate Sums and Maximums ---
 # Summing the values currently inside our lists
@@ -64,3 +71,7 @@ print("Currently you have {0} points for discussions out of {1}".format(disc_sum
 print("Currently you have {0} points for course projects out of {1}".format(proj_sum, max_proj))
 # Displaying the core assessment totals in the required format
 print("Currently you have {0} points for core assessments out of {1}".format(core_sum, max_core))
+
+
+# ---------- unit 5 -------- 
+
