@@ -74,4 +74,42 @@ print("Currently you have {0} points for core assessments out of {1}".format(cor
 
 
 # ---------- unit 4 -------- 
+# I updated the lists by using the Unit 1 variables I have already created. 
+# # This replaces the Unit 2 estimates with my actual grades (50 and 45).
+total_discussion_points = [Unit1_discussion_points, 50, 50] # Unit 2 actual: 50
+total_course_project_points = [Unit1_course_project_points, 45, 45] # Unit 2 actual: 45
+total_core_assessment_points = [Unit1_core_assessment_points, 0, 100] # Unit 2 actual: 0, as we didn't have core assessment for unit2
+# 2. Define Classes to store homework rules (Required for Unit 4)
+class Discussions:
+    maximum_points_per_task = 50 # The max score for any discussion
+    display_name = "discussion" # Used for the final output message
+class Course_projects:
+    maximum_points_per_task = 50 # The max score for any project
+    display_name = "course project"
 
+class Core_assesments:
+    maximum_points_per_task = 100 # The max score for core assessments
+    display_name = "core assessment"
+
+# 3. Creating a function to check if I got maximum points (Required for Unit 4)
+def check_performance(grades, assignment_type):
+    # Set the variable to True to start (the "algorithm" requested)
+    is_perfect = True 
+    # Looping through the list of grades
+    for score in grades: 
+        # If any score is less than the max (including 0), set variable to False
+        if score < assignment_type.maximum_points_per_task: 
+            is_perfect = False 
+    
+    # Checking if the variable stayed True or became False
+    if is_perfect:
+        print(f"Congrats! You got maximum points for ALL {assignment_type.display_name} homeworks so far!")
+    else:
+        print(f"Unfortunately you did not get maximum points for ALL {assignment_type.display_name} homeworks")
+
+# 4. Final Output for ID 1675569
+print(f"\n--- Performance Report for ID: 1675569 ---")
+# Calling the function for all three homework types
+check_performance(total_discussion_points, Discussions)
+check_performance(total_course_project_points, Course_projects)
+check_performance(total_core_assessment_points, Core_assesments)
